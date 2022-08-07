@@ -5,7 +5,14 @@ if (navigator.userAgent.indexOf("IEMobile") >= 0) {
     };
 }
 
-//localStorage.clear();
+function borrarTodo() {
+    let text = "Esta acción borrará toda las transacciones en la base de datos. Desea Continuar?\nPresione OK o Cancel.";
+    if (confirm(text) == true) {
+        localStorage.clear();
+
+    } 
+    
+}
 
 let dollarUS = Intl.NumberFormat("en-US", {
     style: "currency",
@@ -62,7 +69,7 @@ function myReport() {
     var b = menuList('Reports', 'listview'),
         d = menuList('Reports', 'rmm-toggled', 'z-index:1000'),
         f = menuList('Reports', 'rmm-main-list'),
-        g = '</div></nav><section class="body row scroll-y"><h1>Reporte</h1><h2>Registro de Transacciones</h2><form id="transactions-form" role="form"></form><div class="table-responsive"><table class="table table-condensed table-hover"><tr id="transactions-head" class="info"><th>#</th><th>Tipo</th><th>Categoria</th><th>Articulo</th><th>Monto</th><th>Fecha</th><th>Comentarios</th></tr><tbody id="transactions-table"></tbody></table></div></section><footer class="footer row">Some status text here</footer></main>';
+        g = '</div></nav><section class="body row scroll-y"><h1>Reporte</h1><h2>Registro de Transacciones</h2><form id="transactions-form" role="form"></form><div class="table-responsive"><table class="table table-condensed table-hover"><tr id="transactions-head" class="info"><th>#</th><th>Tipo</th><th>Categoria</th><th>Articulo</th><th>Monto</th><th>Fecha</th><th>Comentarios</th></tr><tbody id="transactions-table"></tbody></table></div></section><footer class="footer row"><span>Some status text here</span><button onclick="borrarTodo()">Borrar Transacciones</button></footer></main>';
 
     writeHTML(b, d, f, g);
 

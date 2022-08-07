@@ -1088,3 +1088,7 @@ button {
     text-align: end;
     padding-right: 30px;
 }
+.footer.footer.row {
+    display: flex;
+    justify-content: space-between;
+}
