@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>CoinTracker</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script type="text/javascript" src="./js/script.js"></script>
+<!--     <script type="text/javascript" src="1.txt"></script> -->
+</head>
+<body>
+    <aside class="left col">
+        <header class="header row">
+            Menu
+        </header>
+        <nav class="body row scroll-y">
+            <script>
+                document.write(menuList('Home', 'listview'));
+            </script>
+        </nav>
+        <footer class="footer row">
+            &copy; 2015 - CoinTracker
+        </footer>
+    </aside>
+    <main class="right col">
+        <header class="header row">
+            <span>CoinTracker</span>
+        </header>
+        <nav class="rmm graphite" data-menu-style="" style="padding: 1.2em; max-width: 561.75px;">
+            <div class="toggled-menu">
+                <div class="rmm-toggled" style="display: block;">
+                    <div class="rmm-toggled-controls">
+                        <div class="rmm-toggled-title" onclick="closeMenu()">CoinTracker</div>
+                        <div id="rmm-button" class="rmm-button" onclick="showMenu()">
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="toggle-menu" class="hidden">
+                    <script>
+                        document.write(menuList('Home', 'rmm-toggled', 'z-index:1000'));
+                    </script>
+                </div>
+            </div>
+            <div class="top-menu" style="padding: 1.2 em; max-width: 561.75px;">
+                <script>
+                    document.write(menuList('Home', 'rmm-main-list'));
+                </script>
+            </div>
+        </nav>
+        <section class="body row scroll-y">
+            <h1>Bienvenido a </h1>
+            <h2>COIN Tracker</h2>
+            <img class="coin" src="./img/coin.png" alt="coin rotate">
+        </section>
+        <footer class="footer row">
+            BYU-Idaho   *   Mobile Application Development   *   CIT261   *   Winter 2015
+        </footer>
+    </main>
+</body>
+
+</html>
